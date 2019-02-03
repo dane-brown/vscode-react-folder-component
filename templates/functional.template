@@ -1,0 +1,20 @@
+'use strict';
+// @flow
+import React from 'react';
+import PropTypes from 'prop-types';
+
+const {componentName} = props => (
+  <div className="{componentName}-wrapper">
+    Test content
+  </div>
+);
+
+{componentName}.PropTypes = {
+
+}
+
+{componentName}.defaultProps = {
+
+} 
+
+export default {componentName};

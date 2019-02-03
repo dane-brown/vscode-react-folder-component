@@ -1,0 +1,68 @@
+{
+  "name": "create-react-component",
+  "displayName": "create-react-component",
+  "description": "Util made to quickly create folder with React component, its styles file and test file",
+  "publisher": "olehvolynets",
+  "version": "0.1.0",
+  "engines": {
+    "vscode": "^1.30.0"
+  },
+  "categories": [
+    "Other",
+    "Snippets"
+  ],
+  "activationEvents": [
+    "onCommand:extension.createReactClassComponent",
+    "onCommand:extension.createReactFunctionalComponent",
+    "onCommand:extension.createReactPureComponent"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "extension.createReactClassComponent",
+        "title": "Create Class Component"
+      },
+      {
+        "command": "extension.createReactFunctionalComponent",
+        "title": "Create Functional Component"
+      },
+      {
+        "command": "extension.createReactPureComponent",
+        "title": "Create Pure Component"
+      }
+    ],
+    "menus": {
+      "explorer/context": [
+        {
+          "command": "extension.createReactClassComponent",
+          "group": "navigation"
+        },
+        {
+          "command": "extension.createReactFunctionalComponent",
+          "group": "navigation"
+        },
+        {
+          "command": "extension.createReactPureComponent",
+          "group": "navigation"
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "postinstall": "node ./node_modules/vscode/bin/install",
+    "test": "node ./node_modules/vscode/bin/test"
+  },
+  "devDependencies": {
+    "@types/mocha": "^2.2.42",
+    "@types/node": "^8.10.25",
+    "eslint": "^4.11.0",
+    "typescript": "^3.1.4",
+    "vscode": "^1.1.28"
+  },
+  "dependencies": {
+    "change-case": "^3.1.0",
+    "fs": "0.0.1-security",
+    "fs-extra": "^7.0.1"
+  }
+}
