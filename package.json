@@ -2,6 +2,7 @@
   "name": "create-react-component",
   "displayName": "create-react-component",
   "description": "Util made to quickly create folder with React component, its styles file and test file",
+  "author": "Oleh Volynets",
   "publisher": "olehvolynets",
   "version": "0.1.0",
   "engines": {
@@ -64,5 +65,6 @@
     "change-case": "^3.1.0",
     "fs": "0.0.1-security",
     "fs-extra": "^7.0.1"
-  }
+  },
+  "repository": "https://github.com/Galahatt/create-react-component"
 }
