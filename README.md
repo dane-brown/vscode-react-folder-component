@@ -1,15 +1,9 @@
-# CREATE-REACT-COMPONENT
+# REACT-FOLDER-COMPONENT
 
-### Generatos directory for React component
-
-Filled with starter template, has options for **Pure** and **Functional** components
-
-In the end you get a directory that looks like this:
+### Scaffolds a React Folder Component
 
 ```
 -ComponentFolder/
----Component.jsx
+---index.js
 ---Component.sass
----Component.test.jsx
----package.json
 ```

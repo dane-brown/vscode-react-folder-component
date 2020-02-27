@@ -1,10 +1,10 @@
 {
-  "name": "create-react-component",
-  "displayName": "create-react-component",
-  "description": "Util made to quickly create folder with React component, its styles file and test file",
-  "author": "Oleh Volynets",
-  "publisher": "olehvolynets",
-  "version": "0.1.0",
+  "name": "react-folder-component",
+  "displayName": "react-folder-component",
+  "description": "Scaffold a React Component Folder",
+  "author": "Dane Brown",
+  "publisher": "danebrown",
+  "version": "1.0.0",
   "engines": {
     "vscode": "^1.30.0"
   },
@@ -13,46 +13,27 @@
     "Snippets"
   ],
   "activationEvents": [
-    "onCommand:extension.createReactClassComponent",
-    "onCommand:extension.createReactFunctionalComponent",
-    "onCommand:extension.createReactPureComponent"
+    "onCommand:extension.createReactFunctionalComponent"
   ],
   "main": "./extension.js",
   "contributes": {
     "commands": [
       {
-        "command": "extension.createReactClassComponent",
-        "title": "Create Class Component"
-      },
-      {
         "command": "extension.createReactFunctionalComponent",
-        "title": "Create Functional Component"
-      },
-      {
-        "command": "extension.createReactPureComponent",
-        "title": "Create Pure Component"
+        "title": "Create Component"
       }
     ],
     "menus": {
       "explorer/context": [
         {
-          "command": "extension.createReactClassComponent",
-          "group": "navigation"
-        },
-        {
           "command": "extension.createReactFunctionalComponent",
-          "group": "navigation"
-        },
-        {
-          "command": "extension.createReactPureComponent",
           "group": "navigation"
         }
       ]
     }
   },
   "scripts": {
-    "postinstall": "node ./node_modules/vscode/bin/install",
-    "test": "node ./node_modules/vscode/bin/test"
+    "postinstall": "node ./node_modules/vscode/bin/install"
   },
   "devDependencies": {
     "@types/mocha": "^2.2.42",
@@ -65,6 +46,5 @@
     "change-case": "^3.1.0",
     "fs": "0.0.1-security",
     "fs-extra": "^7.0.1"
-  },
-  "repository": "https://github.com/Galahatt/create-react-component"
+  }
 }

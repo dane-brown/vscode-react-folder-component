@@ -26,8 +26,6 @@ function activate(context) {
 
         return Promise.all([
           generators.createComponent(componentDir, componentName, type),
-          generators.createTestFile(componentDir, componentName),
-          generators.createPackageJSON(componentDir, componentName),
           generators.createCSS(componentDir, componentName)
         ]);
       })
@@ -39,14 +37,9 @@ function activate(context) {
 
   const componentsList = [
     {
-      type: 'class',
-      commandID: 'extension.createReactClassComponent'
-    },
-    {
       type: 'functional',
       commandID: 'extension.createReactFunctionalComponent'
     },
-    { type: 'pure', commandID: 'extension.createReactPureComponent' }
   ];
 
   componentsList.forEach(comp => {

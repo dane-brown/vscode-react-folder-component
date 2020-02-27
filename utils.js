@@ -59,38 +59,9 @@ module.exports = {
         .toString()
         .replace(/{componentName}/g, compName);
 
-      let filename = `${componentDir}/${compName}.jsx`;
+      let filename = `${componentDir}/index.js`;
 
       return this.createFile(filename, componentContent);
-    },
-
-    createTestFile: function(componentDir, componentName) {
-      let templateFileName = this.templatesDir + `/test.template`;
-
-      const compName = pascalCase(componentName);
-
-      let componentContent = fs
-        .readFileSync(templateFileName)
-        .toString()
-        .replace(/{componentName}/g, compName);
-
-      let filename = `${componentDir}/${compName}.test.jsx`;
-
-      return this.createFile(filename, componentContent);
-    },
-
-    createPackageJSON: function(componentDir, componentName) {
-      let templateFileName = this.templatesDir + '/package.template';
-
-      const compName = pascalCase(componentName);
-      let indexContent = fs
-        .readFileSync(templateFileName)
-        .toString()
-        .replace(/{componentName}/g, compName);
-
-      let filename = `${componentDir}/package.json`;
-
-      return this.createFile(filename, indexContent);
     },
 
     createCSS: function(componentDir, componentName) {

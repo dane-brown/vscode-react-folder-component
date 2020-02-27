@@ -1,13 +1,12 @@
-'use strict';
-// @flow
 import React from 'react';
 import PropTypes from 'prop-types';
+import "./{componentName}.scss";
 
-const {componentName} = props => (
-  <div className="{componentName}-wrapper">
-    Test content
-  </div>
-);
+const {componentName} = () => {
+	return (
+	  <div></div>
+	)
+};
 
 {componentName}.PropTypes = {
 
