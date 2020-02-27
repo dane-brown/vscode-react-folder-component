@@ -65,7 +65,7 @@ module.exports = {
     },
 
     createCSS: function(componentDir, componentName) {
-      let templateFileName = `${this.templatesDir}/sass.template`;
+      let templateFileName = `${this.templatesDir}/scss.template`;
 
       const compName = pascalCase(componentName);
       let cssContent = fs
@@ -73,7 +73,7 @@ module.exports = {
         .toString()
         .replace(/{componentName}/g, compName);
 
-      let filename = `${componentDir}/${compName}.sass`;
+      let filename = `${componentDir}/${compName}.scss`;
 
       return this.createFile(filename, cssContent);
     }
