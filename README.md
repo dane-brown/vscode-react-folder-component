@@ -1,4 +1,4 @@
-# REACT-FOLDER-COMPONENT
+# 🔌 React-Folder-Component ✨
 
 ### Scaffolds a React Folder Component
 
